@@ -39,6 +39,9 @@ export default {
           this.android = content.data.googleplay;
           this.ios = content.data.appstore;
           break;
+          default:
+            this.$router.push('error');
+            break;
       }
     },
   }
